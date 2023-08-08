@@ -1,0 +1,36 @@
+{
+  "name": "electron-version-update",
+  "version": "1.0.0",
+  "description": "An app to test version updates",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "build":{
+    "appId": "electron-version-update",
+    "productName":"auto-updater-app",
+    "win":{
+      "target":"nsis"
+    },
+    "directories":{
+      "output":"dist"
+    }
+  },
+  "author": "Mahrukh Soomro",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^25.3.2"
+  },
+  "dependencies": {
+    "electron-builder": "^24.6.3",
+    "electron-updater": "^6.1.1"
+  }
+}
